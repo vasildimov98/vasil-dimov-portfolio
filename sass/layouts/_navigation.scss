@@ -1,0 +1,39 @@
+.nav {
+  background-color: pink;
+
+  // Nav items
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    list-style: none;
+  }
+
+  &__item {
+    &--first {
+      margin-right: auto;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+  }
+
+  &__link--first {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+}

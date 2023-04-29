@@ -4,7 +4,7 @@
   "description": "portfolio site",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass ./sass/main.scss ./css/style.css -w",
+    "watch:sass": "node-sass ./sass/main.scss ./css/style.css -w --recursive",
     "dev-server": "live-server",
     "start": "npm-run-all --parallel dev-server watch:sass",
     "compile:sass": "node-sass ./sass/main.scss ./css/style.comp.css",
