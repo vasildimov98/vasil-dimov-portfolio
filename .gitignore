@@ -1,0 +1,25 @@
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# Ignore Node modules
+node_modules/
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore temporary files
+logs/
+temp/
+
+# Ignore user-specific files
+.vscode/
+.idea/
+
+# Ignore credentials
+secrets/
+keys/
+.env
