@@ -1,12 +1,10 @@
 .nav {
-  background-color: pink;
-
   // Nav items
   &__items {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 2rem;
+    gap: 1.5rem;
+    padding: var(--padding-default);
     list-style: none;
   }
 
@@ -16,19 +14,35 @@
     }
   }
 
-  &__link:link,
-  &__link:visited {
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
-    text-align: center;
-  }
+  &__link,
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--grey-color-1);
+      text-align: center;
+      padding: 1rem 2rem;
+      border-radius: var(--border-radius-small);
+    }
 
-  &__link--first {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    &:hover,
+    &:active {
+      color: var(--primary-color);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 2px 2px 2px 2px var(--primary-color);
+    }
+
+    &--first {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 
   &__img {
