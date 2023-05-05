@@ -7,8 +7,20 @@ body {
   color: var(--grey-color-1);
 }
 
-.heading-primary {
-  font-size: 10rem;
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
   line-height: 1.2;
+}
+
+.heading-primary {
+  font-size: var(--font-size-heading-primary);
+}
+
+.heading-secondary {
+  font-size: var(--font-size-heading-secondary);
+}
+
+.paragraph {
+  font-size: var(--font-size-default);
 }

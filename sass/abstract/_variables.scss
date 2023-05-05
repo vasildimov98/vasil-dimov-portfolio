@@ -2,6 +2,7 @@
 :root {
   // Primary
   --primary-color: #0dbf7b;
+  --secondary-color: #bf0d43;
 
   // Text Colors
   // Default colors
@@ -9,13 +10,15 @@
   // Grey
   --grey-color-1: #333;
 
-  // Background Color
-  // Pink
-  --background-color: white;
-
   // Border radius
   --border-radius-small: 0.8rem;
+  --border-radius-medium: 2rem;
 
   // Padding
-  --padding-default: 1rem 5rem;
+  --padding-default: 3rem 5rem;
+
+  // Font size
+  --font-size-default: 1.8rem;
+  --font-size-heading-primary: 5rem;
+  --font-size-heading-secondary: 4rem;
 }

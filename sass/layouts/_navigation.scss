@@ -24,7 +24,7 @@
       text-transform: uppercase;
       color: var(--grey-color-1);
       text-align: center;
-      padding: 1rem 2rem;
+      padding: 1.5rem 3rem;
       border-radius: var(--border-radius-small);
     }
 
@@ -33,9 +33,13 @@
       color: var(--primary-color);
     }
 
-    &:focus {
+    &:focus,
+    &:focus-visible {
       outline: none;
-      box-shadow: 2px 2px 2px 2px var(--primary-color);
+      background-color: var(--white-color);
+      outline: 3px solid var(--primary-color);
+      border-radius: var(--border-radius-medium);
+      color: var(--primary-color);
     }
 
     &--first {
