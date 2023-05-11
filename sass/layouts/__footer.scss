@@ -1,0 +1,54 @@
+.footer {
+  background-color: var(--nav-color);
+  padding: var(--padding-default);
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 8rem 0;
+    border-bottom: 1px solid var(--grey-color-2);
+  }
+
+  &__myself {
+    width: 40%;
+  }
+
+  &__link:link,
+  &__link:visited {
+    &:link,
+    &:visited {
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--grey-color-1);
+      display: inline-block;
+      background-color: transparent;
+      transition: all 0.3s;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:hover,
+    &:active {
+      outline: none;
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__copy {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4rem 0;
+  }
+}

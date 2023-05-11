@@ -1,10 +1,17 @@
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  background-color: var(--nav-color);
   // Nav items
   &__items {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    padding: var(--padding-default);
+    padding: 1rem 3rem;
     list-style: none;
   }
 
@@ -26,6 +33,7 @@
       text-align: center;
       padding: 1.5rem 3rem;
       border-radius: var(--border-radius-small);
+      transition: all 0.3s;
     }
 
     &:hover,

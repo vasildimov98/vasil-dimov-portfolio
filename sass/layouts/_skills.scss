@@ -8,8 +8,6 @@
   padding: var(--padding-default);
 
   &__items {
-    width: 120rem;
-    margin: 0 auto;
     list-style: none;
     display: grid;
     justify-content: center;
@@ -23,44 +21,46 @@
     padding: 2rem 4rem;
     text-align: center;
     opacity: 1;
+    transition: all 0.5s;
 
     &:hover span {
       opacity: 0;
     }
 
-    &:hover {
-      background-size: cover;
-      background-position: center;
-    }
-
     &--1:hover {
       background-image: url(../images/skills/html.jpg);
+      background-size: cover;
+      background-position: center;
     }
 
     &--2:hover {
       background-image: url(../images/skills/css.jpg);
       background-size: cover;
+      background-position: center;
     }
 
     &--3:hover {
       background-image: url(../images/skills/javascript.jpg);
       background-size: cover;
-      background-position: left;
+      background-position: 25% 75%;
     }
 
     &--4:hover {
       background-image: url(../images/skills/angular.jpg);
       background-size: cover;
+      background-position: center;
     }
 
     &--5:hover {
-      background-image: url(../images/skills/c-sharp.jpg);
+      background-image: url(../images/skills/csharp.jpg);
       background-size: cover;
+      background-position: center;
     }
 
     &--6:hover {
       background-image: url(../images/skills/sql.jpg);
       background-size: cover;
+      background-position: center;
     }
   }
 

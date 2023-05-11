@@ -2,13 +2,15 @@
 :root {
   // Primary
   --primary-color: #0dbf7b;
-  --secondary-color: #bf0d43;
+  --secondary-color: hsl(342, 87%, 40%);
+  --nav-color: #e6ffed;
 
   // Text Colors
   // Default colors
   --white-color: #fff;
   // Grey
   --grey-color-1: #333;
+  --grey-color-2: #ccc;
 
   // Border radius
   --border-radius-small: 0.8rem;
@@ -19,6 +21,8 @@
 
   // Font size
   --font-size-default: 1.8rem;
+  --font-size-footer: 1.4rem;
   --font-size-heading-primary: 5rem;
   --font-size-heading-secondary: 4rem;
+  --font-size-heading-tertiary: 3rem;
 }

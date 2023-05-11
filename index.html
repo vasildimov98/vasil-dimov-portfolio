@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
     <title>Vasil Dimov</title>
 
     <!-- Links -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script -->
+    <script src="https://kit.fontawesome.com/40984e4d9a.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -18,65 +23,63 @@
         <ul class="nav__items">
             <!-- Home Link -->
             <li class="nav__item nav__item--first">
-                <a href="#" class="nav__link nav__link--first">
+                <a href="/home" class="nav__link nav__link--first">
                     <img src="./images/myself/vasil.jpeg" alt="Picture of Myself" class="nav__img">
                     <span class="nav__full-name">Vasil Dimov</span>
                 </a>
             </li>
             <!-- About Link -->
             <li class="nav__item">
-                <a href="#" class="nav__link">About</a>
+                <a href="/about" class="nav__link">About</a>
             </li>
             <!-- Projects Link -->
             <li class="nav__item">
-                <a href="#" class="nav__link">Projects</a>
+                <a href="/projects" class="nav__link">Projects</a>
             </li>
             <!-- Resume Link -->
             <li class="nav__item">
-                <a href="#" class="nav__link">Résumé</a>
+                <a href="/resume" class="nav__link">Résumé</a>
             </li>
             <!-- Contact Link -->
             <li class="nav__item">
-                <a href="#" class="nav__link btn btn--cta">Contact me!</a>
+                <a href="/contact" class="nav__link btn btn--cta">Contact me!</a>
         </ul>
     </nav>
 
-    <!-- Header -->
-    <header class="header u-margin-top-huge">
-        <h1 class="heading-primary">
-            Software Engineer, Designer and Coding Enthusiast
-        </h1>
-
-        <p class="paragraph">
-            Building innovative software solutions that meet your needs and exceed your expectations.
-        </p>
-
-        <div class="header__cartoon u-margin-top-medium">
-            <img class="header__picture" src="./images/myself/Cartoonify (1).svg" alt="Cartoon version of myself">
-        </div>
-
-        <div class="header__buttons u-margin-top-huge">
-            <button class="btn">Get to know me</button>
-            <button class="btn">View My work</button>
-            <button class="btn btn--cta">Contact me!</button>
-        </div>
-    </header>
-
     <!-- Main -->
-    <main class="main u-margin-top-huge">
-        <section class="skills">
-            <h2 class="heading-secondary">My Skills</h2>
+    <main id="content" class="main u-margin-top-huge"></main>
 
-            <ul class="skills__items">
-                <li class="skills__item skills__item--1"><span>HTML</span></li>
-                <li class="skills__item skills__item--2"><span>CSS</span></li>
-                <li class="skills__item skills__item--3"><span>Javascript</span></li>
-                <li class="skills__item skills__item--4"><span>Angular</span></li>
-                <li class="skills__item skills__item--5"><span>C#</span></li>
-                <li class="skills__item skills__item--6"><span>SQL</span></li>
-            </ul>
-        </section>
-    </main>
+    <!-- Footer -->
+    <footer class="footer u-margin-top-huge">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__myself">
+                    <h4 class="heading-quaternary">Vasil Dimov</h4>
+                    <p class="footer__paragraph u-margin-top-small">
+                        As a Software Developer, I am passionate about helping individuals and businesses achieve
+                        success
+                        through effective website creation and maintenance.
+                    </p>
+                </div>
+
+
+                <div class="footer__socials">
+                    <h4 class="heading-quaternary">Socials</h4>
+                    <a href="#" class="footer__link u-margin-top-small">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&copy; Made by <a class="footer__link" href="#">Vasil Dimov</a></p>
+        </div>
+    </footer>
+
+    <!-- Body Scripts -->
+    <script src="./scripts/routing.js"></script>
 </body>
 
 </html>

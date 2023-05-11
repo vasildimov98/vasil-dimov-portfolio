@@ -8,7 +8,9 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary,
+.heading-quaternary {
   font-weight: 700;
   line-height: 1.2;
 }
@@ -21,6 +23,22 @@ body {
   font-size: var(--font-size-heading-secondary);
 }
 
+.heading-tertiary {
+  font-size: var(--font-size-heading-tertiary);
+}
+
+.heading-quaternary {
+  font-size: var(--font-size-default);
+}
+
 .paragraph {
   font-size: var(--font-size-default);
+}
+
+.footer__paragraph {
+  font-size: var(--font-size-footer);
+}
+
+.fab {
+  font-size: 2rem;
 }
