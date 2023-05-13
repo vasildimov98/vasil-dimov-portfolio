@@ -2,16 +2,19 @@
 @import "./abstract/_variables.scss";
 
 // Base
-@import "./base/_base.scss";
-@import "./base/_utilities.scss";
-@import "./base/_typography.scss";
+@import "./base/_base";
+@import "./base/_utilities";
+@import "./base/_typography";
 
 // Layouts
-@import "./layouts/_navigation.scss";
-@import "./layouts/_skills.scss";
-@import "./layouts/_header.scss";
-@import "./layouts/_projects.scss";
-@import "./layouts/_footer.scss";
+@import "./layouts/navigation";
+@import "./layouts/skills";
+@import "./layouts/header";
+@import "./layouts/projects";
+@import "./layouts/footer";
+@import "./layouts/about";
+@import "./layouts/work";
+@import "./layouts/studies";
 
 // Components
-@import "./components/_button.scss";
+@import "./components/button";

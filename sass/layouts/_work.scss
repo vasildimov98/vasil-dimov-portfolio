@@ -1,0 +1,53 @@
+.work {
+  padding: var(--padding-default);
+
+  &__title {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 2rem;
+  }
+
+  &__container {
+    padding-left: 3rem;
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+    grid-gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--primary-color);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      border-color: var(--primary-color);
+    }
+  }
+
+  &__date {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0.3rem 0 0.5rem 0;
+  }
+
+  &__aspects {
+    list-style: none;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__aspect {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    line-height: 1.7 !important;
+    color: var(--primary-color);
+  }
+}

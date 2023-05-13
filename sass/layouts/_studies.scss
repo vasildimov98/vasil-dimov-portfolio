@@ -1,0 +1,27 @@
+.studies {
+  padding: var(--padding-default);
+
+  &__container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+
+  &__date {
+    font-size: var(--font-size-default);
+  }
+}
