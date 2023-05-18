@@ -2,26 +2,57 @@
   padding: var(--padding-default);
 
   &__container {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
+    padding-left: 3rem;
   }
 
   &__header {
-    padding-left: 3rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1.2rem;
+    padding: 1.5rem;
+    background-color: var(--tertiary-color);
+    cursor: pointer;
 
-    div {
-      margin-right: auto;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+    &:hover {
+      background-color: var(--quaternary-color);
     }
   }
 
+  &__icon {
+    font-size: 2rem;
+    width: 1.6rem;
+    color: var(--primary-color);
+  }
+
   &__date {
-    font-size: var(--font-size-default);
+    margin-left: auto;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 2rem;
+    list-style: none;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: inherit;
+      text-decoration: none;
+
+      cursor: pointer;
+    }
+
+    &:hover,
+    &:active {
+      color: var(--primary-color);
+    }
   }
 }

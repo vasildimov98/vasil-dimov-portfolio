@@ -2,6 +2,8 @@
   const pageTitle = "Vasil Dimov";
   const main = document.getElementById("content");
 
+  const scriptsSet = new Set();
+
   const homePageInfo = {
     template: "../app/home.html",
     title: `Home Page | ${pageTitle}`,
@@ -63,7 +65,7 @@
         break;
       case "/about":
         // Load content from about.html
-        loadPage(info);
+        loadPage(info, "../scripts/studies.js");
         break;
       case "/projects":
         // Load content from projects.html
@@ -97,7 +99,7 @@
     window.addEventListener("popstate", router);
   });
 
-  async function loadPage(info) {
+  async function loadPage(info, ...scripts) {
     const html = await fetch(info.template).then((res) => res.text());
     // Extract the content using the DOM API
     const parser = new DOMParser();
@@ -110,5 +112,16 @@
 
     // Add the content to the target document
     main.innerHTML = content;
+
+    if (scripts) {
+      scripts.forEach((script) => {
+        if (scriptsSet.has(script)) return;
+
+        scriptsSet.add(script);
+        const scriptEl = document.createElement("script");
+        scriptEl.src = script;
+        document.body.appendChild(scriptEl);
+      });
+    }
   }
 })();
