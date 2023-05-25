@@ -16,7 +16,7 @@
 
   // Border radius
   --border-radius-small: 0.8rem;
-  --border-radius-medium: 2rem;
+  --border-radius-medium: 1rem;
 
   // Padding
   --padding-default: 3rem 5rem;
@@ -28,4 +28,7 @@
   --font-size-heading-secondary: 4rem;
   --font-size-heading-tertiary: 3rem;
   --font-size-heading-quaternary: 2rem;
+
+  // Box shadow
+  --box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 }

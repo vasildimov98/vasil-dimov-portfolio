@@ -2,14 +2,16 @@
 @import "./layouts/navigation";
 @import "./layouts/skills";
 @import "./layouts/header";
-@import "./layouts/projects";
+@import "./layouts/showcase";
 @import "./layouts/footer";
 @import "./layouts/about";
 @import "./layouts/work";
 @import "./layouts/studies";
+@import "./layouts/projects";
 
 // Components
 @import "./components/button";
+@import "./components/card";
 
 // Abstracts
 @import "./abstract/_variables.scss";
