@@ -275,6 +275,8 @@
   justify-content: center;
   padding: 0 1rem;
   gap: 5px; }
+  .projects__items {
+    list-style: none; }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.8rem;
@@ -378,6 +380,9 @@ body {
 
 .u-margin-top-medium {
   margin-top: 4rem; }
+
+.u-margin-top-large {
+  margin-top: 6rem; }
 
 .u-margin-top-huge {
   margin-top: 8rem; }

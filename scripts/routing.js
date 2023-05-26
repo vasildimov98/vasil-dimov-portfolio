@@ -100,6 +100,7 @@
   });
 
   async function loadPage(info, ...scripts) {
+    // Fetch the template and extract the content
     const html = await fetch(info.template).then((res) => res.text());
     // Extract the content using the DOM API
     const parser = new DOMParser();
