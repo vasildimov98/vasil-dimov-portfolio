@@ -65,7 +65,7 @@
         break;
       case "/about":
         // Load content from about.html
-        loadPage(info, "../scripts/studies.js");
+        loadPage(info, "scripts/studies.js");
         break;
       case "/projects":
         // Load content from projects.html
@@ -73,7 +73,7 @@
         break;
       case "/resume":
         // Load content from resume.html
-        loadPage(info);
+        loadPage(info, ["./scripts/resume.js"]);
         break;
       case "/contact":
         // Load content from contact.html
