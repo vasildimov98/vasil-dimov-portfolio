@@ -65,27 +65,27 @@
     .skills__item:hover span {
       opacity: 0; }
     .skills__item--1:hover {
-      background-image: url(../images/skills/html.jpg);
+      background-image: url(../static/images/skills/html.jpg);
       background-size: cover;
       background-position: center; }
     .skills__item--2:hover {
-      background-image: url(../images/skills/css.jpg);
+      background-image: url(../static/images/skills/css.jpg);
       background-size: cover;
       background-position: center; }
     .skills__item--3:hover {
-      background-image: url(../images/skills/javascript.jpg);
+      background-image: url(../static/images/skills/javascript.jpg);
       background-size: cover;
       background-position: 25% 75%; }
     .skills__item--4:hover {
-      background-image: url(../images/skills/angular.jpg);
+      background-image: url(../static/images/skills/angular.jpg);
       background-size: cover;
       background-position: center; }
     .skills__item--5:hover {
-      background-image: url(../images/skills/csharp.jpg);
+      background-image: url(../static/images/skills/csharp.jpg);
       background-size: cover;
       background-position: center; }
     .skills__item--6:hover {
-      background-image: url(../images/skills/sql.jpg);
+      background-image: url(../static/images/skills/sql.jpg);
       background-size: cover;
       background-position: center; }
   .skills__img {

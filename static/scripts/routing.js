@@ -65,7 +65,7 @@
         break;
       case "/about":
         // Load content from about.html
-        loadPage(info, "scripts/studies.js");
+        loadPage(info, "studies.js");
         break;
       case "/projects":
         // Load content from projects.html
@@ -73,7 +73,7 @@
         break;
       case "/resume":
         // Load content from resume.html
-        loadPage(info, ["./scripts/resume.js"]);
+        loadPage(info, ["resume.js"]);
         break;
       case "/contact":
         // Load content from contact.html
@@ -102,10 +102,9 @@
   async function loadPage(info, ...scripts) {
     // Fetch the template and extract the content
     const html = await fetch(info.template).then((res) => res.text());
-    // Extract the content using the DOM API
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, "text/html");
-    const content = doc.querySelector("#content-to-extract").innerHTML;
+    // Set the full HTML content, including the script tags
+    const content = html;
+
     document.title = info.title;
     document
       .querySelector('meta[name="description"]')
@@ -120,7 +119,7 @@
 
         scriptsSet.add(script);
         const scriptEl = document.createElement("script");
-        scriptEl.src = script;
+        scriptEl.src = `./scripts/${script}`;
         document.body.appendChild(scriptEl);
       });
     }

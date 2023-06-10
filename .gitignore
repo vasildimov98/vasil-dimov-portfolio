@@ -23,3 +23,8 @@ temp/
 secrets/
 keys/
 .env
+
+# Parcel-specific files
+.parcel-cache/
+.cache/
+dist/
