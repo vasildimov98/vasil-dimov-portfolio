@@ -34,6 +34,7 @@
     "app/*.html": "dist/"
   },
   "dependencies": {
+    "lit": "^2.7.5",
     "parcel-reporter-static-files-copy": "^1.5.0"
   }
 }
