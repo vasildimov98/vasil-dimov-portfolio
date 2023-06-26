@@ -8,6 +8,9 @@ import aboutView from "./views/about";
 import projectsView from "./views/projects";
 import resumeView from "./views/resume";
 
+// Components are responsible for rendering the HTML.
+import { HomeProjects } from "./components/home-projects";
+
 // Register routes
 const routes = [
   new Route("home", "/", homeView),
@@ -16,6 +19,9 @@ const routes = [
   new Route("projects", "/projects", projectsView),
   new Route("resume", "/resume", resumeView),
 ];
+
+// Define Custom Components
+customElements.define("home-projects", HomeProjects);
 
 // Initialize router
 router(routes);
