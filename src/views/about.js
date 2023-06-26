@@ -203,7 +203,7 @@ export default () => html`
     </div>
 
     <div class="studies__container u-margin-top-small">
-      <div class="studies__header">
+      <div class="studies__header" @click="${toggleHeader}">
         <i class="fas fa-chevron-right studies__icon"></i>
         <h4 class="heading-tertiary">SoftUni</h4>
         <p class="studies__date">
@@ -284,7 +284,7 @@ export default () => html`
     </div>
 
     <div class="studies__container u-margin-top-small">
-      <div class="studies__header">
+      <div class="studies__header" @click="${toggleHeader}">
         <i class="fas fa-chevron-right studies__icon"></i>
         <h4 class="heading-tertiary">
           VUZF - University of finance, business and entrepreneurship

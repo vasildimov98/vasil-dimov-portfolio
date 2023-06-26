@@ -28,12 +28,14 @@
     "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.1",
     "parcel": "^2.9.1",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "process": "^0.11.10"
   },
   "copy": {
     "app/*.html": "dist/"
   },
   "dependencies": {
+    "jspdf": "^2.5.1",
     "lit": "^2.7.5",
     "parcel-reporter-static-files-copy": "^1.5.0"
   }
