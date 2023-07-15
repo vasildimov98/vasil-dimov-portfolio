@@ -1,0 +1,9 @@
+.resume {
+  display: grid;
+  grid-template-columns: 35rem 1fr;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  max-width: 120rem;
+  margin: 0 auto;
+  border-radius: 1.2rem;
+}

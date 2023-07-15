@@ -14,9 +14,9 @@ const downloadResume = () => {
 };
 
 export default () => html`
-  <div id="resume">
-    <h1>Resume</h1>
+  <div id="resume" class="resume">
+    <left-side-resume></left-side-resume>
+    <right-side-resume></right-side-resume>
   </div>
-
-  <button @click=${downloadResume}>Download Resume</button>
+  <!-- <button @click=${downloadResume}>Download Resume</button> -->
 `;

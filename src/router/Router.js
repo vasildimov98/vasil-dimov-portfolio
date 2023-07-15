@@ -1,13 +1,19 @@
 import { html, render } from "lit";
 
 export default class Router {
-  #scriptsSet = new Set();
-
   constructor(routes = [], renderNode) {
     this.routes = routes;
     this.renderNode = renderNode;
     this.navigate(location.pathname + location.hash);
+    window.addEventListener("popstate", this._onpopstate);
   }
+
+  _onpopstate = (e) => {
+    e.preventDefault();
+    if (e.state === null) return;
+
+    this.navigate(e.state.path);
+  };
 
   match(route, requestPath) {
     let paramsName = [];
@@ -33,12 +39,16 @@ export default class Router {
 
   navigate(path) {
     if (!path) path = "/home";
+
     const route = this.routes.find((route) => this.match(route, path));
+
     if (!route) {
       render(html`404 Not Found`, this.renderNode);
       return;
     }
-    history.pushState({}, "", path);
+
+    history.pushState({ path }, "", path);
+    document.querySelector(`.nav__link--${path.replace("/", "")}`)?.focus();
     render(route.renderView(), this.renderNode);
   }
 

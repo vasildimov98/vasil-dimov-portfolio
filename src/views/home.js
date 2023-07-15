@@ -47,6 +47,6 @@ export default () => html`
       </p>
     </div>
 
-    <home-projects></home-projects>
+    <home-showcases></home-showcases>
   </section>
 `;

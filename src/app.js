@@ -9,7 +9,12 @@ import projectsView from "./views/projects";
 import resumeView from "./views/resume";
 
 // Components are responsible for rendering the HTML.
-import { HomeProjects } from "./components/home-projects";
+import { ShowcaseProject } from "./components/home/showcase-project";
+import { HomeShowcases } from "./components/home/home-showcases";
+import { StudyType } from "./components/studies/study-type";
+import { StudyContent } from "./components/studies/study-content";
+import { LeftSideResume } from "./components/resume/left-side";
+import { RightSideResume } from "./components/resume/right-side";
 
 // Register routes
 const routes = [
@@ -21,7 +26,12 @@ const routes = [
 ];
 
 // Define Custom Components
-customElements.define("home-projects", HomeProjects);
+customElements.define("showcase-project", ShowcaseProject);
+customElements.define("home-showcases", HomeShowcases);
+customElements.define("study-content", StudyContent);
+customElements.define("study-type", StudyType);
+customElements.define("left-side-resume", LeftSideResume);
+customElements.define("right-side-resume", RightSideResume);
 
 // Initialize router
 router(routes);
