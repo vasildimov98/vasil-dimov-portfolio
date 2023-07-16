@@ -15,6 +15,8 @@ import { StudyType } from "./components/studies/study-type";
 import { StudyContent } from "./components/studies/study-content";
 import { LeftSideResume } from "./components/resume/left-side";
 import { RightSideResume } from "./components/resume/right-side";
+import { ResumeWorkItem } from "./components/resume/work-item";
+import { ResumeInfo } from "./components/resume/info";
 
 // Register routes
 const routes = [
@@ -32,6 +34,8 @@ customElements.define("study-content", StudyContent);
 customElements.define("study-type", StudyType);
 customElements.define("left-side-resume", LeftSideResume);
 customElements.define("right-side-resume", RightSideResume);
+customElements.define("resume-info", ResumeInfo);
+customElements.define("work-item", ResumeWorkItem);
 
 // Initialize router
 router(routes);
