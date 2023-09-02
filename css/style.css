@@ -287,6 +287,13 @@
   margin: 0 auto;
   border-radius: 1.2rem; }
 
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem; }
+
 .right-side {
   padding: 3rem 5rem; }
   .right-side__heading {
@@ -388,6 +395,50 @@
   .left-side__paragraph {
     font-size: 1.5rem !important;
     font-weight: 300; }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 1rem;
+  text-align: center;
+  gap: 3rem; }
+  .contact__form {
+    width: 100%;
+    max-width: 50rem;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--white-color);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-start;
+    gap: 2rem; }
+  .contact__group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem; }
+  .contact__label {
+    font-size: 1.7rem;
+    align-self: flex-start;
+    font-weight: 500;
+    color: var(--grey-color-1); }
+  .contact__input {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey-color-2);
+    background-color: var(--grey-color-3);
+    color: var(--grey-color-1);
+    transition: all 0.3s; }
+    .contact__input:focus, .contact__input:focus-visible {
+      outline: none;
+      border: 1px solid var(--primary-color);
+      background-color: var(--white-color); }
 
 .btn, .btn:link, .btn:visited {
   font-size: 1.8rem;

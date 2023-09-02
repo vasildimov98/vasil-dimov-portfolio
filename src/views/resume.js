@@ -4,9 +4,9 @@ import { html } from "lit";
 const downloadResume = () => {
   const content = document.getElementById("resume");
 
-  const doc = new jsPDF();
+  const doc = new jsPDF("p", "mm", "a4");
 
-  doc.html(content, {
+  doc.html(content.innerHTML, {
     callback: function (pdf) {
       pdf.save("resume.pdf");
     },
@@ -14,9 +14,12 @@ const downloadResume = () => {
 };
 
 export default () => html`
-  <div id="resume" class="resume">
-    <left-side-resume></left-side-resume>
-    <right-side-resume></right-side-resume>
+  <!-- TODO: Resume examples | Create Resume and Download it from their -->
+  <div class="resume-container">
+    <button class="btn" @click="${downloadResume}">Download Resume</button>
+    <div id="resume" class="resume">
+      <left-side-resume></left-side-resume>
+      <right-side-resume></right-side-resume>
+    </div>
   </div>
-  <!-- <button @click=${downloadResume}>Download Resume</button> -->
 `;
