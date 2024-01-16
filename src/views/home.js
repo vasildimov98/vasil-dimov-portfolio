@@ -20,9 +20,9 @@ export default () => html`
     </div>
 
     <div class="header__buttons u-margin-top-huge">
-      <button class="btn">Get to know me</button>
-      <button class="btn">View My work</button>
-      <button class="btn btn--cta">Contact me!</button>
+      <a route="/about" href="/about" class="btn">Get to know me</a>
+      <a route="/projects" href="/projects" class="btn">View My work</a>
+      <a route="/contact" href="/contact" class="btn btn--cta">Contact me!</a>
     </div>
   </header>
 

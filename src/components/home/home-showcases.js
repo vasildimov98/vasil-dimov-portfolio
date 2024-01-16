@@ -7,7 +7,7 @@ const SHOWCASE_PROJECTS = [
     title: "The Joke Button",
     description:
       "The Joke Button is a web application that provides you with a quick and easy way to enjoy some good humor. With a simple click of a button, this application will display a random joke from our collection of jokes.",
-    link: "#",
+    link: "https://vasildimov98.github.io/04.tell-me-a-joke",
   },
   {
     image: "../images/projects/infinite.png",
@@ -15,6 +15,7 @@ const SHOWCASE_PROJECTS = [
     title: "Infinite Scroll",
     description:
       "The Infinite Scroll is a web application that provides you with a quick and easy way to enjoy a collection of images. You can scroll all day long and the images will keep on coming.",
+    link: "https://vasildimov98.github.io/02.Infinite-scroll"
   },
   {
     image: "../images/projects/paint.png",
@@ -22,6 +23,7 @@ const SHOWCASE_PROJECTS = [
     title: "The Paint Copy",
     description:
       "Have you ever wanted to draw something but you didn't have a pen and paper? Well, now you can do it with our web application. The Paint Copy is a web application that provides you with a quick and easy way to draw it right away.",
+    link: "https://vasildimov98.github.io/19.paint-clone/"
   },
 ];
 

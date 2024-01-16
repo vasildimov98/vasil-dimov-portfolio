@@ -31,7 +31,7 @@ export class ShowcaseProject extends LitElement {
         <div class="showcase__description">
           <h3 class="heading-tertiary">${this.title}</h3>
           <p class="paragraph">${this.description}</p>
-          <a href=${this.link} class="btn">View Project</a>
+          <a href=${this.link} target="_blank" class="btn">View Project</a>
         </div>
       </div>
     `;
@@ -43,7 +43,7 @@ export class ShowcaseProject extends LitElement {
         <div class="showcase__description">
           <h3 class="heading-tertiary">${this.title}</h3>
           <p class="paragraph">${this.description}</p>
-          <a href=${this.link} class="btn">View Project</a>
+          <a href=${this.link} target="_blank" class="btn">View Project</a>
         </div>
         <img class="showcase__image" src=${this.image} alt=${this.imageAlt} />
       </div>

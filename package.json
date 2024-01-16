@@ -39,6 +39,7 @@
     "@emailjs/browser": "^3.11.0",
     "jspdf": "^2.5.1",
     "lit": "^2.7.5",
+    "live-server": "^1.2.2",
     "parcel-reporter-static-files-copy": "^1.5.0"
   }
 }
